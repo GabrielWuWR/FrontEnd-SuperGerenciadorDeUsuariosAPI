@@ -10,26 +10,32 @@
 </head>
 
 <body>
-    <header class="containerEstilo">
+    <header id="header" class="containerEstilo">
         <h1>Super Gerenciador de Usuários</h1>
     </header>
-    
+
     <div class="containerCadastro">
         <h2>Cadastrar novo Usuário: </h2>
 
         <div class="formulario">
             <div class="inputs">
-                <input type="text" class="containerEstiloInput" placeholder="Nome">
-                <input type="text" class="containerEstiloInput" placeholder="Celular">
-                <input type="text" class="containerEstiloInput" placeholder="Foto">
-                <input type="text" class="containerEstiloInput" placeholder="Email">
-                <input type="text" class="containerEstiloInput" placeholder="Endereço">
-                <input type="text" class="containerEstiloInput" placeholder="Cidade">
+                <input id="inputNome" type="text" class="containerEstiloInput" placeholder="Nome">
+                <input id="inputCelular" type="text" class="containerEstiloInput" placeholder="Celular">
+                <input id="inputFoto" type="text" class="containerEstiloInput" placeholder="Foto">
+                <input id="inputEmail" type="text" class="containerEstiloInput" placeholder="Email">
+                <input id="inputEndereco" type="text" class="containerEstiloInput" placeholder="Endereço">
+                <input id="inputCidade" type="text" class="containerEstiloInput" placeholder="Cidade">
             </div>
-            <button class="containerEstilo botaoCadastro">Cadastrar</button>
+
+            <div id="cadastrar" class="containerEstilo botaoCadastro">
+                <div class="containerBolhas">
+                    <div class="bolha"></div>
+                </div>
+                Cadastrar
+            </div>
         </div>
     </div>
-    
+
     <div class="containerUsers" id="containerUsers">
         <div class="cabecalho containerEstilo">
             <p>Id</p>
@@ -37,7 +43,6 @@
             <p>Imagem</p>
             <p>Ações</p>
         </div>
-
     </div>
 </body>
 

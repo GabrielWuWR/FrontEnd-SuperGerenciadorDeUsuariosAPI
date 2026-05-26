@@ -117,10 +117,30 @@ header {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botaoCadastro:hover {
     cursor: pointer;
+}
+
+.containerBolhas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.bolha {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    animation-name: subir;
+    animation-duration: 8s;
 }
 
 /* Container usuarios */
@@ -199,4 +219,25 @@ header {
 
 .containerAcoes {
     gap: 10px;
+}
+
+@keyframes subir {
+    0% {
+
+    }
+    100% {
+        transform: translateY(-20vh);
+        opacity: 0;
+    }
+}
+.mensagem {
+    position: absolute;
+    bottom: 50px;
+    width: 50vh;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: subir;
+    animation-duration: 5s;
 }

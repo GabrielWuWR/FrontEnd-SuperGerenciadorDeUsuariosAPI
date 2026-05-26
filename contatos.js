@@ -1,4 +1,3 @@
-
 const URL = 'https://bakcend-fecaf-render.onrender.com/contatos';
 
 export async function getContatos() {
